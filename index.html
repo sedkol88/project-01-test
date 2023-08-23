@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- Normalize -->
@@ -17,11 +17,13 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <!-- Styles -->
-    <!-- <link rel="stylesheet" href="./css/styles320.css" /> -->
     <!-- <link rel="stylesheet" href="./css/media-mobile.css" /> -->
     <!-- <link rel="stylesheet" href="./css/media-tablet.css" /> -->
     <!-- <link rel="stylesheet" href="./css/media-desktop.css" /> -->
-    <link rel="stylesheet" href="./css/style-footer.css" />
+    <!-- <link rel="stylesheet" href="./css/style-clients.css" /> -->
+    <link rel="stylesheet" href="./css/style-newsletter.css" />
+    <link rel="stylesheet" href="./css/style-defaults.css" />
+    <link rel="stylesheet" href="./css/style-common.css" />
   </head>
 
   <body>
@@ -180,6 +182,104 @@
         </div>
       </div>
     </header> -->
+
+    <!-- <section class="clients">
+      <h2 class="clients-title section-title">Clients reviews</h2>
+      <ul class="clients-list list">
+        <li class="clients-item">
+          <img src="./images/clients/client1-1x.jpg" alt="client photo" />
+          <h3 class="clients-item-title">Alexandra dream</h3>
+          <p class="clients-item-note">1 week ago</p>
+          <p class="clients-item-text">
+            I was blown away by the quality and craftsmanship of the furniture I
+            received from this company. Each piece was unique and beautifully
+            designed, and you can tell that a lot of thought and care goes into
+            every detail.
+          </p>
+        </li>
+        <li class="clients-item">
+          <img src="./images/clients/client2-1x.jpg" alt="client photo" />
+          <h3 class="clients-item-title">James Williams</h3>
+          <p class="clients-item-note">A week ago</p>
+          <p class="clients-item-text">
+            The "Minimal" furniture set is a fantastic addition to my home. It
+            boasts a minimalist design, enhancing the feel and look of my living
+            space. The sturdy construction is worth noting too, which speaks
+            volumes about its durability.
+          </p>
+        </li>
+        <li class="clients-item">
+          <img src="./images/clients/client3-1x.jpg" alt="client photo" />
+          <h3 class="clients-item-title">Emily Watson</h3>
+          <p class="clients-item-note">3 week ago</p>
+          <p class="clients-item-text">
+            The "Minimal" furniture set has far exceeded my expectations. The
+            sleek design combined with the high-quality materials have not only
+            added an exceptional aesthetic to my space but also offered an
+            uncompromising standard of comfort.
+          </p>
+        </li>
+      </ul>
+    </section> -->
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-form-wrap">
+          <h2 class="newsletter-title section-title">Newsletter</h2>
+          <p class="newsletter-text">
+            Every week we will send you new designs and information about sales.
+          </p>
+          <form class="newsletter-form">
+            <div class="newsletter-name-wrap">
+              <input
+                class="newsletter-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="newsletter-email-wrap">
+              <input
+                class="newsletter-input"
+                type="mail"
+                name="user-email"
+                id="user-email"
+                placeholder="E-mail"
+              />
+              <svg class="newsletter-error-icon" width="24" height="24">
+                <use href="./images/icons.svg#newsletter-icon-error"></use>
+              </svg>
+            </div>
+
+            <input
+              class="newsletter-check visually-hidden"
+              type="checkbox"
+              name="user-subscribe"
+              value="true"
+              id="user-subscribe"
+            />
+            <label class="newsletter-check-text" for="user-subscribe">
+              <span class="newsletter-check-span">
+                <svg class="newsletter-check-icon" width="13" height="13">
+                  <use href="./images/icons.svg#newsletter-check-bird"></use>
+                </svg>
+              </span>
+              Agree to subscribe to the newsletter
+            </label>
+            <button class="newsletter-submit-btn" type="submit">Send</button>
+          </form>
+        </div>
+
+        <div class="newsletter-img-wrap">
+          <img
+            src="./images/newsletter/newsletter-img-1x.jpg"
+            alt="sofa picture"
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- <main>
       <section class="hero">
@@ -714,7 +814,7 @@
       </div>
     </div> -->
 
-    <footer class="foot">
+    <!-- <footer class="foot">
       <div>
         <div class="flex">
           <a class="link" href="">minimal</a>
@@ -725,11 +825,12 @@
               <li>contacts</li>
             </ul>
           </nav>
-          <address>
-            <p>city</p>
-            <p>street</p>
-          </address>
         </div>
+        <address>
+          <p>city</p>
+          <p>street</p>
+        </address>
+
         <div>
           <a class="link" href="">0676206649</a>
         </div>
@@ -741,7 +842,7 @@
           <li>3</li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- <script src="./js/modal.js"></script> -->
     <!-- <script src="./js/mobile-menu.js"></script> -->
