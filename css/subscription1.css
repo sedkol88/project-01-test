@@ -13,6 +13,7 @@ body {
   color: var(--blue-font, #0a224a);
 }
 
+/*----------- PROJECT --------------------*/
 h1,
 h2,
 h3,
@@ -55,16 +56,9 @@ img {
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 
 .section-title {
-  color: var(--blue-font, #0a224a);
-  font-family: "Roboto", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1.4;
-  text-transform: uppercase;
 }
 
 /*================================================*/
@@ -73,8 +67,6 @@ img {
   padding-top: 64px;
   padding-bottom: 64px;
   max-width: 100%;
-
-  /* outline: 1px solid tomato; */
 }
 
 .newsletter > .container {
@@ -84,7 +76,6 @@ img {
 .newsletter-form-wrap {
   max-width: 100%;
   margin-bottom: 30px;
-  /* outline: 1px solid green; */
 }
 
 .newsletter-title {
@@ -95,6 +86,8 @@ img {
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
+
+  color: var(--blue-font, #0a224a);
 }
 
 .newsletter-text {
@@ -111,6 +104,7 @@ img {
 }
 
 .newsletter-name-wrap {
+  position: relative;
   margin-bottom: 20px;
 }
 
@@ -153,19 +147,12 @@ img {
 }
 
 /*------------------------------------------------*/
-/* .newsletter-email-wrap:hover .newsletter-error-icon {
-  opacity: 1;
-} */
-/* .newsletter-email-wrap:hover > .newsletter-input {
-  color: #e74a3b;
-  border: 1px solid #e74a3b;
-} */
-/* .newsletter-email-wrap:hover > .newsletter-input::placeholder {
-  color: #e74a3b;
-} */
 .newsletter-input:invalid {
   color: #e74a3b;
   border: 1px solid #e74a3b;
+}
+.newsletter-input:invalid + .newsletter-error-icon {
+  opacity: 1;
 }
 /*------------------------------------------------*/
 
@@ -191,7 +178,7 @@ img {
 .newsletter-check:checked + .newsletter-check-text span {
   background-color: var(--blue-font, #0a224a);
   border: none;
-  fill: #fff;
+  fill: var(--white, #fff);
 }
 
 .newsletter-submit-btn {
@@ -218,7 +205,6 @@ img {
 /*============================================================================*/
 /*-------- 375 mobile ---------------------*/
 @media screen and (min-width: 375px) {
-  /*----------- COMMON STYLES -------------*/
   .container {
   }
   .section-title {
@@ -253,14 +239,12 @@ img {
   }
 
   /*------------------------------------------------*/
-  .newsletter-email-wrap:hover .newsletter-error-icon {
+  .newsletter-input:invalid {
   }
-  .newsletter-email-wrap:hover > .newsletter-input {
+  .newsletter-input:invalid + .newsletter-error-icon {
   }
-  .newsletter-email-wrap:hover > .newsletter-input::placeholder {
-  }
-
   /*------------------------------------------------*/
+
   .newsletter-check-text {
   }
   .newsletter-check-text span {
@@ -279,7 +263,6 @@ img {
 /*============================================================================*/
 /*-------- 768 tablet ---------------------*/
 @media screen and (min-width: 768px) {
-  /*----------- COMMON STYLES -------------*/
   .container {
   }
   .section-title {
@@ -304,6 +287,7 @@ img {
     line-height: 1.4;
     text-align: start;
   }
+
   .newsletter-text {
     font-size: 18px;
   }
@@ -325,14 +309,12 @@ img {
   }
 
   /*------------------------------------------------*/
-  .newsletter-email-wrap:hover .newsletter-error-icon {
+  .newsletter-input:invalid {
   }
-  .newsletter-email-wrap:hover > .newsletter-input {
+  .newsletter-input:invalid + .newsletter-error-icon {
   }
-  .newsletter-email-wrap:hover > .newsletter-input::placeholder {
-  }
-
   /*------------------------------------------------*/
+
   .newsletter-check-text {
     margin-bottom: 30px;
     font-size: 18px;
@@ -353,7 +335,6 @@ img {
 /*============================================================================*/
 /*-------- 1440 desktop ---------------------*/
 @media screen and (min-width: 1440px) {
-  /*----------- COMMON STYLES -------------*/
   .container {
   }
   .section-title {
@@ -361,7 +342,7 @@ img {
 
   /*------------- 1440 ----------------*/
   .newsletter {
-    /* padding-top: 100px; */
+    padding-top: 100px;
     padding-bottom: 86px;
   }
   .newsletter > .container {
@@ -396,14 +377,12 @@ img {
   }
 
   /*------------------------------------------------*/
-  .newsletter-email-wrap:hover .newsletter-error-icon {
+  .newsletter-input:invalid {
   }
-  .newsletter-email-wrap:hover > .newsletter-input {
+  .newsletter-input:invalid + .newsletter-error-icon {
   }
-  .newsletter-email-wrap:hover > .newsletter-input::placeholder {
-  }
-
   /*------------------------------------------------*/
+
   .newsletter-check-text {
     margin-bottom: 31px;
   }
