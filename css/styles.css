@@ -234,33 +234,6 @@ img {
   max-width: 100%;
 }
 
-/*----------------------------*/
-.logo,
-.nav1,
-.address,
-.tel,
-.tel2,
-.email,
-.email2,
-.nav2,
-.socials {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 20px;
-  outline: 1px solid tomato;
-}
-.foot > .container {
-  display: flex;
-  gap: 30px;
-}
-.nav2,
-.email,
-.tel2,
-.email2 {
-  display: none;
-}
-/*----------------------------*/
-
 /*============================================================================*/
 /*-------- 375 mobile ---------------------*/
 @media screen and (min-width: 375px) {
@@ -383,35 +356,6 @@ img {
   }
   .newsletter-img-wrap {
   }
-
-  /*----------------------------*/
-  /* .logo,
-  .nav1,
-  .address,
-  .tel,
-  .tel2,
-  .email,
-  .email2,
-  .nav2,
-  .socials {
-    margin-bottom: 20px;
-    outline: 1px solid tomato;
-  } */
-
-  /* .foot > .container {
-    display: flex;
-    gap: 30px;
-  } */
-
-  .nav1 {
-    display: none;
-  }
-
-  .nav2,
-  .email {
-    display: block;
-  }
-  /*----------------------------*/
 }
 
 /*============================================================================*/
@@ -481,50 +425,4 @@ img {
   .newsletter-img-wrap {
     width: 460px;
   }
-
-  /*----------------------------*/
-  /* .logo,
-  .nav1,
-  .address,
-  .tel,
-  .tel2,
-  .email,
-  .email2,
-  .nav2,
-  .socials {
-    margin-bottom: 20px;
-    outline: 1px solid tomato;
-  } */
-
-  /* .foot > .container {
-    display: flex;
-    gap: 30px;
-  } */
-
-  .nav1,
-  .tel,
-  .email {
-    display: none;
-  }
-  .address {
-    display: block;
-  }
-
-  .nav2,
-  .tel2,
-  .email2 {
-    display: block;
-  }
-  .nav2-list {
-    display: flex;
-    gap: 10px;
-
-    padding: 0;
-    margin-top: 0;
-  }
-  .tel2-email2-wrap {
-    display: flex;
-    gap: 30px;
-  }
-  /*----------------------------*/
 }
